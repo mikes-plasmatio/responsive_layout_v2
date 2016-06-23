@@ -1,0 +1,409 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+
+body{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	color:black;
+	background:#fafafa;
+}
+
+p{
+	font-size: 1em;
+	line-height: 1.48;
+	margin-bottom: 1.5em;
+}
+
+
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+a:hover{
+color: #c77571;
+}
+
+a:visted{
+color: #3a3663;
+}
+
+img{
+	max-width: 100%;
+	margin: 0;
+}
+
+
+/*--------Navigation---------*/
+.name{
+	padding-bottom: .75em;
+	margin:0;
+}
+
+.main-nav{
+	margin-top: 5px;
+}
+
+
+.main-nav a{
+	text-align: center;
+	display:block;
+	background-color: white;
+	padding: .5rem .8rem;
+	margin: 5px;
+}
+
+#main-footer{
+	border-width: thin;
+	border-top: solid;
+	border-color: rgb(231,231,231);
+}
+
+.bottom-name{
+	float: left;
+}
+
+.to-Top{
+	float:right;
+}
+
+.bottom-nav{
+	display: none
+}
+
+.name-b{
+	display: none;
+}
+/*-------- layout Styles---------*/
+.wrapper{
+	padding-left: 1em;
+	padding-right: 1em;
+	
+}
+
+.main-header{
+	text-align: center;
+	padding:1em 0;
+	padding-top: 1em;
+	padding-bottom: .5em;
+}
+
+#portfolio{
+	background-color: white;
+}
+
+.main-content,
+.secondary-content{
+	text-align: center;
+	padding:.75em 1em;
+}
+
+
+.the-bottom{
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+
+#skills{
+	text-align: center;
+	padding: .5em;
+	margin:1.5em 0;
+}
+
+
+.skill-content li{
+	display: inline-block;
+	margin:5px;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.skill-content p{
+	margin:.25 0;
+}
+/*--------Page Elements---------*/
+
+
+.secondary-content p{
+
+margin-bottom: 16px
+
+}
+
+.introText{
+	text-align: center;
+}
+
+
+/*--------Clear Fix---------*/
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+
+
+
+
+
+
+
+
+/*********************************
+MediaQueries
+*********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************
+Tablet
+*********************************/
+
+
+@media (min-width: 768px){
+
+.enclose{
+	min-height: calc(100vh - 36px);
+}
+
+
+.wrapper{
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/*---nav-start----*/
+
+.main-nav li{
+		display: inline-block;
+		margin-left: 15px;
+	}
+	.main-nav a{
+		background-color: transparent;
+
+	}
+.introText{
+	text-align: left;
+}
+
+
+.name-b{
+	display: block;
+	float:left;
+	}
+
+.bottom-nav{
+	display: block;
+	float: right;
+}
+
+.bottom-nav li{
+
+	display: inline-block;
+	margin-left: 15px;
+}
+
+	.mobilebottom-nav{
+		display:none;
+	}
+
+
+/* ==========layout========= */
+
+.intro{
+	padding: 1.5em;
+}
+.intro img{
+	width:45% ;
+	float:right;
+	padding-right: 2em;
+}
+
+.introText{
+	width:40%;
+	float:left;
+	padding-left: 2em;
+	margin:0;
+}
+
+
+
+.img-gallery li{
+	float: left;
+	width: 45%;
+	margin:2.5%;
+	}
+
+
+.img-gallery li:nth-child(2n+1){
+		clear: left;
+	}
+
+
+.contact-text p{
+	width: 50%;
+	display: inline-block;
+	margin: .5em 0 0 0;
+}
+
+.outro{
+	padding-bottom: 1em;
+}
+
+
+
+
+
+
+/*--------Clear Fix---------*/
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+}
+
+
+
+
+
+/*********************************
+desktop
+*********************************/
+
+
+
+@media(min-width: 1024px){
+
+
+.wrapper{
+		width: 85%;
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+
+
+
+
+/*---nav-start----*/
+.name{
+	float:left;
+	}
+
+.main-header h1{
+	padding-top: .25em;
+	padding-bottom: 0;
+}
+
+.main-nav{
+	float: right;
+}
+
+.main-nav li{
+
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.main-nav a{
+		background-color: transparent;
+
+	}
+
+.introText{
+	text-align: left;
+}
+
+
+.name-b{
+	float:left;
+	}
+
+.bottom-nav{
+	float: right;
+}
+
+.bottom-nav li{
+
+	display: inline-block;
+	margin-left: 15px;
+}
+
+	.mobilebottom-nav{
+		display:none;
+	}
+	
+
+/* ==========layout========= */
+.intro{
+	padding: 1.5em;
+}
+.intro img{
+	width:45% ;
+	float:right;
+	padding-right: 2em;
+}
+
+.introText{
+	width:40%;
+	float:left;
+	padding-left: 2em;
+	margin:0;
+}
+
+.img-gallery li{
+	float: left;
+	width: 28.3333%;
+	margin:2.5%;
+	}
+
+
+.img-gallery li:nth-child(2n+1){
+	clear:none;
+}	
+
+.img-gallery li:nth-child(3n+1) {
+		clear: left;
+	}
+
+
+.contact-text p{
+	width: 50%;
+	display: inline-block;
+	margin: .5em 0 0 0;
+}
+
+.outro{
+	padding-bottom: 1em;
+}
+
+
+}
